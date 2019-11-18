@@ -1,0 +1,22 @@
+--- 
+title: "Your title"
+site: bookdown::bookdown_site
+documentclass: article
+bibliography: [files/references.bib]
+biblio-style: apalike
+link-citations: yes
+---
+
+:::{custom-style="Author"}
+Name^1^,  Name^2^
+:::
+
+:::{custom-style="Affiliation"}
+^1^Affiliation 1, ^2^Affiliation 1.
+:::
+
+
+[email@email.com]{custom-style="Email"}
+
+
+<!-- page break --> ######

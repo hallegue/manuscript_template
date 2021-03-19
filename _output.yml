@@ -1,8 +1,9 @@
 bookdown::word_document2:
   reference_docx: files/template.docx
   fig_caption: true
-  pandoc_args: [ "--csl", "files/evolution.csl" ]
-bookdown::html_document2:
-  fig_caption: yes
-  number_sections: false
-  keep_md: true
+bookdown::pdf_document2:
+  latex_engine: xelatex
+  keep_tex: true
+  toc: false
+  includes:
+    in_header: files/preamble.tex

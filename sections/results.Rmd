@@ -1,0 +1,7 @@
+# Results {#results}
+
+The mean value of group x (`r ress$x`) was larger than the mean value of group y (`r ress$y`; t: `r ress$tval`, p: `r ress$pval`).
+
+Cross-reference to Fig. \@ref(fig:fig1).
+
+Cross-reference to Table \@ref(tab:tab1).

@@ -2,10 +2,49 @@
 title: "Your title"
 site: bookdown::bookdown_site
 documentclass: article
-bibliography: [files/references.bib]
+fontsize: 12pt
+bibliography: files/references.bib
 biblio-style: apalike
+csl: files/evolution.csl
 link-citations: yes
 ---
+
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+
+knitr::opts_chunk$set(
+	echo      = FALSE,
+	message   = FALSE,
+	warning   = FALSE,
+	dpi       = 300,
+	out.width = "100%",
+	fig.pos   = "H"
+)
+
+knitr::knit_hooks$set(crop = knitr::hook_pdfcrop)
+
+options(digits = 2)  
+
+# load libraries
+library(bookdown)
+library(knitr)
+library(kableExtra)
+library(ggplot2)
+library(dplyr)
+
+theme_set(theme_classic())
+
+# source functions
+miceadds::source.all(here::here("R/"), print.source = FALSE)
+
+# load results, figures, and tables
+ress <- get_Results()
+figg <- get_Figures()
+tabb <- get_Tables()
+
+
+```
+
+
 
 :::{custom-style="Author"}
 Name^1^,  Name^2^
@@ -19,4 +58,6 @@ Name^1^,  Name^2^
 [email@email.com]{custom-style="Email"}
 
 
-<!-- page break --> ######
+**keywords:** words.
+
+\pagebreak

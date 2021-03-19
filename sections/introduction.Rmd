@@ -11,5 +11,4 @@ Examples of some citation formats:
 
 [@Darwin1859; @Bumpus1898]
 
-[e.g., @Johnston1972]
-
+[e.g., @Bumpus1898]

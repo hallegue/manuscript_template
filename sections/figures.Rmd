@@ -1,0 +1,8 @@
+# Figures {-}
+
+
+```{r fig1, fig.cap="Figure caption"}
+figg$p
+```
+
+\pagebreak

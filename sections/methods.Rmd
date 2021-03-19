@@ -1,0 +1,8 @@
+# Methods {#methods}
+
+\begin{align}
+t = \frac{\bar{X}_{1} - \bar{X}_{2}} {s_{p} \times \sqrt{\frac{1}{n_{1}} + \frac{1}{n_{2}}}} (\#eq:H1S)
+\end{align}
+
+In equation \@ref(eq:H1S), $\bar{X}_{1}$ and $\bar{X}_{2}$ are the mean of the samples. Similarly, $n_{1}$ and $n_{2}$ are the sample sizes, and $s_{p}$.
+

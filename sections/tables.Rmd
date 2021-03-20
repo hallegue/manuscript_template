@@ -1,7 +1,8 @@
 # Tables {-}
 
 ```{r tab1, tab.cap="My table caption"}
-flextable::flextable(tabb$t)
+flextable::flextable(tabb$t) %>% 
+  flextable::autofit(.)
 ```
 
 \pagebreak

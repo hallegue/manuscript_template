@@ -1,0 +1,9 @@
+eq:H1S
+fig:fig1
+tab:tab1
+fig:figS1
+intro
+methods
+results
+discussion
+conclusion

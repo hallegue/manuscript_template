@@ -27,9 +27,8 @@ options(digits = 2)
 # load libraries
 library(bookdown)
 library(knitr)
-library(kableExtra)
-library(ggplot2)
 library(dplyr)
+library(ggplot2)
 
 theme_set(theme_classic())
 
@@ -44,20 +43,21 @@ tabb <- get_Tables()
 
 ```
 
-
-
 :::{custom-style="Author"}
-Name^1^,  Name^2^
+Name^1^,  Name^2^. \newline
 :::
+
 
 :::{custom-style="Affiliation"}
-^1^Affiliation 1, ^2^Affiliation 1.
+^1^Affiliation, \newline
+^2^Affiliation. \newline
 :::
 
+**keywords:** words. \newline
 
-[email@email.com]{custom-style="Email"}
 
+**Correspondence:** \newline
+Name (email@email.com) \newline
 
-**keywords:** words.
 
 \pagebreak

@@ -1,24 +1,44 @@
 # Tables {-}
 
-```{r}
+```{r tab1}
 
-kable(tabb$t,
-    # col.names = ,
-    align     = "c",
-    label     = "tab1",
-    position  = "H",
-    booktabs  = TRUE,
-    longtable = TRUE,
-    caption   = "My table caption") %>%
+tab_caption <- "My table caption"
 
-  add_header_above(c(" ", "Group 1" = 5, "Group 2" = 6)) %>%
-  add_header_above(c(" ", "High level group" = 11), bold = T, italic = T) %>%
-  kable_styling(full_width    = FALSE,
-                font_size     = 10,
-                latex_options = c("striped", "repeat_header")) 
-
-# %>%
-#   as_image()
+if (knitr::is_latex_output()){
+  
+  kable(tabb$t,
+      format = "latex",
+      # col.names = ,
+      align     = "c",
+      label     = "tab1",
+      position  = "H",
+      booktabs  = TRUE,
+      longtable = TRUE,
+      caption   = tab_caption) %>%
+  
+    add_header_above(c(" ", "Group 1" = 5, "Group 2" = 6)) %>%
+    add_header_above(c(" ", "High level group" = 11), bold = T, italic = T) %>%
+    kable_styling(full_width    = FALSE,
+                  font_size     = 10,
+                  latex_options = c("striped", "repeat_header")) 
+  
+}else{
+  
+  tabb$t %>%
+  tibble::rownames_to_column(., "name") %>%
+  flextable(.) %>%
+    set_caption(., caption = tab_caption) %>%
+    add_header_row(., values = c(" ", "Group 1", "Group 2"), colwidths = c(1, 5, 6)) %>%
+    add_header_row(., values = c(" ", "High level group"),   colwidths = c(1, 11)) %>%
+    theme_booktabs(.) %>%
+    merge_h(., i = 1:2) %>%
+    align(., j = 2:11, align="center", part="all") %>%
+    align(., j = 1, align="left", part="all") %>%
+    padding(., padding=2, part="all") %>%
+    font(., fontname="Time New Roman") %>%
+    autofit()
+  
+}
 
 ```
 

@@ -16,7 +16,10 @@ knitr::opts_chunk$set(
 	message   = FALSE,
 	warning   = FALSE,
 	dpi       = 300,
-	out.width = "100%",
+	fig.width = 5,
+  fig.asp   = 0.8,
+  out.width = "75%",
+	fig.align = "center",
 	fig.pos   = "H"
 )
 
@@ -36,7 +39,7 @@ library(kableExtra)
 library(dplyr)
 library(stringr)
 library(ggplot2)
-# library(flextable)
+library(flextable)
 
 theme_set(theme_classic())
 

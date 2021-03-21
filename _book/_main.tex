@@ -68,13 +68,15 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
-\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage[a4paper, margin=1in]{geometry}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{float}
 \usepackage{setspace}\doublespacing
 \usepackage{lineno}
 \linenumbers
+\usepackage{hyperref}
+\hypersetup{colorlinks=true}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -161,7 +163,7 @@ In equation \eqref{eq:H1S}, \(\bar{X}_{1}\) and \(\bar{X}_{2}\) are the mean of 
 
 Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-The mean value of group x (126.91) was larger than the mean value of group y (109.77; t: 6.1, p: \ensuremath{9.69\times 10^{-7}}). See Fig. \ref{fig:fig1} and Table \ref{tab:tab1}.
+The mean value of group x (130.16) was larger than the mean value of group y (108.8; t: 5.73, p: \ensuremath{1.39\times 10^{-6}}). See Fig. \ref{fig:fig1} and Table \ref{tab:tab1} (or Fig. \ref{fig:figS1}).
 
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
@@ -210,7 +212,12 @@ Darwin, C. 1859. {The Origin of Species}. Penguin, New York.
 \addcontentsline{toc}{section}{Figures}
 
 \begin{figure}[H]
-\includegraphics[width=1\linewidth]{_main_files/figure-latex/fig1-1} \caption{Figure caption}\label{fig:fig1}
+
+{\centering \includegraphics[width=0.75\linewidth]{_main_files/figure-latex/fig1-1} 
+
+}
+
+\caption{Figure caption}\label{fig:fig1}
 \end{figure}
 
 \pagebreak
@@ -298,7 +305,12 @@ Ferrari Dino & 20 & 6 & 145 & 175 & 3.6 & 2.8 & 16 & 0 & 1 & 5 & 6\\*
 Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 \begin{figure}[H]
-\includegraphics[width=1\linewidth]{_main_files/figure-latex/figS1-1} \caption{Figure caption}\label{fig:figS1}
+
+{\centering \includegraphics[width=0.75\linewidth]{_main_files/figure-latex/figS1-1} 
+
+}
+
+\caption{Figure caption}\label{fig:figS1}
 \end{figure}
 
 \end{document}

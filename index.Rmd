@@ -22,13 +22,21 @@ knitr::opts_chunk$set(
 
 knitr::knit_hooks$set(crop = knitr::hook_pdfcrop)
 
-options(digits = 2)  
+options(
+  digits = 2,
+  knitr.table.format = function(){
+    if (knitr::is_latex_output()) "latex" else "pipe"
+  }
+)  
 
 # load libraries
 library(bookdown)
 library(knitr)
+library(kableExtra)
 library(dplyr)
+library(stringr)
 library(ggplot2)
+# library(flextable)
 
 theme_set(theme_classic())
 

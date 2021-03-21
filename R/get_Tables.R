@@ -1,7 +1,4 @@
 get_Tables <- function(){
   
-  t <- data.frame(id=1:5,res=letters[1:5])
-  
-  
-  return(list("t" = t))
+  return(list("t" = rbind(mtcars, mtcars)[1:30, ]))
 }

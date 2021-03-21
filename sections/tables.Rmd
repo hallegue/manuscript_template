@@ -1,8 +1,25 @@
 # Tables {-}
 
-```{r tab1, tab.cap="My table caption"}
-flextable::flextable(tabb$t) %>% 
-  flextable::autofit(.)
+```{r}
+
+kable(tabb$t,
+    # col.names = ,
+    align     = "c",
+    label     = "tab1",
+    position  = "H",
+    booktabs  = TRUE,
+    longtable = TRUE,
+    caption   = "My table caption") %>%
+
+  add_header_above(c(" ", "Group 1" = 5, "Group 2" = 6)) %>%
+  add_header_above(c(" ", "High level group" = 11), bold = T, italic = T) %>%
+  kable_styling(full_width    = FALSE,
+                font_size     = 10,
+                latex_options = c("striped", "repeat_header")) 
+
+# %>%
+#   as_image()
+
 ```
 
 \pagebreak

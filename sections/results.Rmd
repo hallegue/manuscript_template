@@ -1,7 +1,5 @@
 # Results {#results}
 
-The mean value of group x (`r ress$x`) was larger than the mean value of group y (`r ress$y`; t: `r ress$tval`, p: `r ress$pval`).
+Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-Cross-reference to Fig. \@ref(fig:fig1).
-
-Cross-reference to Table \@ref(tab:tab1).
+The mean value of group x (`r ress$x`) was larger than the mean value of group y (`r ress$y`; t: `r ress$tval`, p: `r ress$pval`). See Fig. \@ref(fig:fig1) and Table \@ref(tab:tab1).

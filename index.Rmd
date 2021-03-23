@@ -3,9 +3,9 @@ title: "Your title"
 site: bookdown::bookdown_site
 documentclass: article
 fontsize: 12pt
-bibliography: files/references.bib
+bibliography: include/references.bib
 biblio-style: apalike
-csl: files/evolution.csl
+csl: include/evolution.csl
 link-citations: yes
 ---
 

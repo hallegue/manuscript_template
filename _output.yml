@@ -1,5 +1,5 @@
 bookdown::word_document2:
-  reference_docx: files/template.docx
+  reference_docx: include/template.docx
   fig_caption: true
   number_sections: false
 bookdown::pdf_document2:
@@ -7,4 +7,4 @@ bookdown::pdf_document2:
   keep_tex: true
   toc: false
   includes:
-    in_header: files/preamble.tex
+    in_header: include/preamble.tex
